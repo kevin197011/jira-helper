@@ -42,14 +42,13 @@ client = JIRA::Client.new(options)
 # pp issue
 
 issue = client.Issue.build
-labels = %w[zh]
 issue.save({
              'fields' => {
-               'summary' => @title.to_s,
-               'description' => @description.to_s,
+               'summary' => @title,
+               'description' => @description,
                'project' => { 'key' => 'SEDEV' },
                'issuetype' => { 'id' => '10005' },
-               'labels' => labels,
+               'labels' => @labels,
                'priority' => { 'id' => '3' }
              }
            })

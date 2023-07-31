@@ -9,3 +9,7 @@
 @description = <<~EOS
   test 1
 EOS
+@labels = %w[
+  dev
+  ops
+]
