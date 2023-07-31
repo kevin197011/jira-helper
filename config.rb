@@ -5,7 +5,7 @@
 # This software is released under the MIT License.
 # https://opensource.org/licenses/MIT
 
-@title = '[zh] test issue'
+@title = '[devops] test issue'
 @description = <<~EOS
   test 1
 EOS
